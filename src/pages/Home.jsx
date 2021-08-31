@@ -6,30 +6,37 @@ import Products from "../utils/products.json";
 class Home extends React.Component {
 	constructor() {
 		super();
-		this.state = {};
+		this.state = {
+			categories: [],
+			categoryNames: []
+		};
 	}
 
 	componentDidMount() {
-		
+		const categories = Object.values(Products);
+		const categoryNames = Object.keys(Products);
+		this.setState({categories, categoryNames})
 	}
 
 	render() {
+		
 		return (
 			<div>
 				<Layout>
 
 					<div className="container">
 						<div className="row">
-							<HomeCategory
-								image="https://cms-cdn.thesolesupplier.co.uk/2019/04/Cover1.jpg"
-								title="Pantofi"
-								description="Cei mai tari pantofi"
+							{this.state.categories.map((category, index) => {
+								return (
+									<HomeCategory
+										key={index}
+										image={category.image}
+										title={category.name}
+										description={category.description}
+										routeName={this.state.categoryNames[index]}
 							/>
-							<HomeCategory
-						
-							/>
-							<HomeCategory />
-							<HomeCategory />
+								)
+							})}
 						</div>
 					</div>
 				

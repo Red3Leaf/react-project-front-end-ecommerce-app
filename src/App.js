@@ -9,13 +9,14 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import About from "./pages/About";
 import Page404 from "./pages/Page404";
+import Category from './pages/Category';
 
 
 export default function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -27,12 +28,13 @@ export default function App() {
               <Link to="/about">About</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <Switch>
           <Route exact={ true } path="/" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/about" component={About} />
+          <Route path="/category/:categoryName" component={Category} />
           <Route path="*" component={Page404} />
         </Switch>
       </div>
