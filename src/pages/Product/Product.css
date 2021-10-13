@@ -1,0 +1,16 @@
+.product .item_image {
+    width: 85%;
+    height: 85%;
+}
+
+.product .info_panel {
+    padding: 60px 25px 25px 25px;
+}
+
+.product .image_panel {
+    padding: 25px;
+}
+
+.product .price {
+    color: red;
+}

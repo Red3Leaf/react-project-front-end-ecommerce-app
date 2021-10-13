@@ -2,3 +2,19 @@
     width: 200px;
     height: auto;
 }
+
+.header .ajust_wishList_icon {
+    width: 25px;
+    height: auto;
+}
+
+.header .user_name_tag {
+    position: absolute;
+    top: 15px;
+    margin-left: 78px;
+}
+
+.header .btn_delogare{
+    margin-top: -25px;
+    margin-left: 77px;
+}

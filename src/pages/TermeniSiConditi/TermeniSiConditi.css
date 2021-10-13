@@ -1,0 +1,9 @@
+.termeniSiConditi .paginaGoala {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    margin: 200px 100px 200px 100px;
+}

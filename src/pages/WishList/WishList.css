@@ -1,0 +1,22 @@
+.wishlist .cartGol {
+    /* height: 70vh; */
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    margin: 100px 100px 200px 100px;
+}
+
+.wishlist .remove_button {
+    cursor: pointer;
+}
+
+.wishlist {
+    height: 50vh;
+}
+
+.wishlist .default_height {
+    height: 62vh;
+}

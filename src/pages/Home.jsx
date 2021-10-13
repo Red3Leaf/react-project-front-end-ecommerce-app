@@ -15,7 +15,8 @@ class Home extends React.Component {
 	componentDidMount() {
 		const categories = Object.values(Products);
 		const categoryNames = Object.keys(Products);
-		this.setState({categories, categoryNames})
+		this.setState({ categories, categoryNames })
+
 	}
 
 	render() {
@@ -23,13 +24,14 @@ class Home extends React.Component {
 		return (
 			<div>
 				<Layout>
-
 					<div className="container">
 						<div className="row">
 							{this.state.categories.map((category, index) => {
+								// console.log();
 								return (
 									<HomeCategory
 										key={index}
+										id={category.items[index]}
 										image={category.image}
 										title={category.name}
 										description={category.description}
@@ -39,7 +41,6 @@ class Home extends React.Component {
 							})}
 						</div>
 					</div>
-				
 				</Layout>
 			</div>
 		);

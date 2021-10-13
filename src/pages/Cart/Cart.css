@@ -1,0 +1,18 @@
+.cart .cartGol {
+    /* height: 70vh; */
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    margin: 100px 100px 200px 100px;
+}
+
+.cart .default_height {
+    height: 62vh;
+}
+
+.cart .remove_button {
+    cursor: pointer;
+}

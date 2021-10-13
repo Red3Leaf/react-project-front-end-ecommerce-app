@@ -1,0 +1,24 @@
+.productItem .item_image {
+    width: 100%;
+    height: 70%;
+}
+
+.productItem .invert_icon {
+    width: 30px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 110px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.productItem .no_decoration {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.productItem a {
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+.Login .button {
+    width: 225px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.Login .logoControl {
+    width: 20px;
+}
+
+.Login .container_login {
+    width: 300px;
+}
+
+.Login .input_style {
+    margin: 5px;
+}
+
+.Login .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login .main_logo_control {
+    margin-bottom: 10px;
+}
+
+.Login .button_container {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px
+}
